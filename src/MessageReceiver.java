@@ -41,6 +41,7 @@ public class MessageReceiver implements MessageListener
                 connection.close();
                 session.close();
                 consumer.close();
+                System.out.println("Connection closing...");
             } catch (JMSException e) { System.out.println("Some error with closing"); }
         }
     }
